@@ -139,55 +139,101 @@ main > section {
 }
 
 /* our sponsor */
-.sponsor-info{
-   max-width: 540px;
-   margin: 50px auto;
-   text-align: center;
+.sponsor-info {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
 }
-.sponsor-container{
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
+.sponsor-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-.sponsor-container img{
-   filter: grayscale(100%);
+.sponsor-container img {
+  filter: grayscale(100%);
+}
+
+/* feature section */
+.feature {
+  gap: 173px;
+}
+
+.feature-title {
+  max-width: 468px;
+  border-left: 5px solid #ff900e;
+  padding: 11px;
+}
+.cards {
+  margin-top: 30px;
+}
+.feature-card {
+  margin-top: 20px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.feature img {
+  width: 100%;
+}
+.experience-badge {
+  padding: 45px 42px;
+  margin-left: -100px;
+  margin-top: -133px;
+}
+.experience-year {
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .team {
+  .team,
+  .feature {
     flex-direction: column;
   }
   .image-container,
-  .box-container, .sponsor-container {
+  .box-container,
+  .sponsor-container {
     grid-template-columns: 1fr;
   }
 
   .our-feature {
     margin: 20px;
   }
-  .box-container, .sponsor-container{
-   justify-items: center;
-   gap: 25px;
+  .box-container,
+  .sponsor-container {
+    justify-items: center;
+    gap: 25px;
+  }
+  .experience-badge {
+    margin: 20px;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .navbar,
   .nav-links,
-  .team {
+  .team,
+  .feature {
     flex-direction: column;
   }
 
-  .box-container, .sponsor-container {
+  .box-container,
+  .sponsor-container {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 20px;
   }
-
-  .our-feature  {
+  .our-feature {
     margin: 20px auto;
   }
-
-
+  .experience-badge {
+    margin: 20px;
+  }
 }
