@@ -169,7 +169,7 @@ main > section {
 .feature-card {
   margin-top: 20px;
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
-  padding: 30px;
+  padding: 15px;
 }
 
 .card-title {
@@ -181,12 +181,12 @@ main > section {
 .feature img {
   width: 100%;
 }
-.experience-badge {
+#experience-badge {
   padding: 45px 42px;
   margin-left: -100px;
   margin-top: -133px;
 }
-.experience-year {
+#experience-year {
   font-weight: 700;
   font-size: 4rem;
 }
@@ -212,7 +212,7 @@ main > section {
     justify-items: center;
     gap: 25px;
   }
-  .experience-badge {
+  #experience-badge {
     margin: 20px;
   }
 }
@@ -232,7 +232,7 @@ main > section {
   .our-feature {
     margin: 20px auto;
   }
-  .experience-badge {
+  #experience-badge {
     margin: 20px;
   }
 }
